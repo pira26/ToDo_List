@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ToDo List</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="flip-container" id="main-container">
+        <div class="flipped">
+
+            <div class="front">
+                <h1>Daily ToDo List</h1>
+                <i class="fa fa-pencil fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-list fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-coffee fa-4x" aria-hidden="true"></i>
+            </div>
+
+            <div class="back">
+                <h1>Add items</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="todoInput" value="">
+                        <button type="button" class="btn btn-primary" onclick="addItem()" id="addButton">Add</button>
+                        <button type="button" class="btn btn-primary" onclick="clearList()" id="clearButton">Clear</button>
+                    </div>
+
+                    <div class="col-md-12" id="listItems">
+                        <ul id="myUl"> </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
